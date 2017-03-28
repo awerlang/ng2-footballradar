@@ -1,0 +1,11 @@
+<td class="u-center">{{game.clock }}</td>
+<td class="u-center">{{score}}</td>
+<td class="cell--teams">{{teams}}</td>
+<td class="u-center">{{game.outrageousTackles }}</td>
+<td>
+  <div class="cards">
+    <div class="cards__card cards__card--yellow">{{game.cards.yellow}}</div>
+    <div class="cards__card cards__card--red">{{game.cards.red}}</div>
+  </div>
+</td>
+<td *ngFor="let player of game.players; trackBy: trackByIndex" [player]="player"></td>

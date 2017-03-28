@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th width="50px">Clock</th>
+            <th width="50px">Score</th>
+            <th width="200px">Teams</th>
+            <th>Outrageous Tackles</th>
+            <th width="100px">Cards</th>
+            <th width="100px">Players</th>
+            <th width="100px"></th>
+            <th width="100px"></th>
+            <th width="100px"></th>
+            <th width="100px"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let game of games; trackBy: trackByIndex" [game]="game"></tr>
+    </tbody>
+</table>
